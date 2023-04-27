@@ -2,6 +2,8 @@
   "extends": "./tsconfig",
   "compilerOptions": {
     "module": "esnext",
-    "outDir": "lib-esm"
-  }
+    "outDir": "lib-esm",
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules/**/*", "lib", "lib-esm", "src/__tests__", "lib"]
 }
