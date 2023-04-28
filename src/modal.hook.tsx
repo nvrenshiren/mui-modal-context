@@ -41,7 +41,13 @@ const HookModal: React.ForwardRefRenderFunction<
     }
   }))
 
-  return <Dialog {...innerConfig} onClose={close} open={visible} />
+  return (
+    <Dialog
+      {...innerConfig}
+      onClose={innerConfig.onClose || close}
+      open={visible}
+    />
+  )
 }
 
 export default forwardRef(HookModal)

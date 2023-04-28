@@ -31,6 +31,6 @@ var HookModal = function (_a, ref) {
             setInnerConfig(function (originConfig) { return (__assign(__assign({}, originConfig), newConfig)); });
         }
     }); });
-    return React.createElement(Dialog, __assign({}, innerConfig, { onClose: close, open: visible }));
+    return (React.createElement(Dialog, __assign({}, innerConfig, { onClose: innerConfig.onClose || close, open: visible })));
 };
 export default forwardRef(HookModal);
