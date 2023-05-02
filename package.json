@@ -1,6 +1,6 @@
 {
   "name": "mui-modal-context",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "mui,modal组件包含上下文",
   "main": "lib/index.js",
   "module": "lib-esm/index.js",
